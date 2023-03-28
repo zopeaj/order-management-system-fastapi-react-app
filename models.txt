@@ -1,0 +1,241 @@
+
+Suppliers
+ supplierID
+ CompanyName
+ Contact/Name
+ Contact/UName
+ Contact/Title
+ Address1
+ Address2
+ City
+ State
+ PostalCode
+ Country
+ Phone
+ Fax
+ Email
+ URL
+ PaymentMethods
+ DiscountType
+ Notes
+ DiscountAvailable
+ CurrentOrder
+ Logo
+ CustomerID
+ streeURL
+
+Products
+ productid
+ sku
+ idsku
+ vendorProductID
+ productname
+ productdescription
+ supplierid
+ categoryid
+ quantityperunit
+ unitPrice
+ MSPR
+ AvailableSize
+ AvaialblColors
+ Size
+ Color
+ Discount
+ UnitWeight
+ UnitStock
+ UnitonOrder
+ RecordLevel
+ ProductAvailable
+ CurrentColor
+ Picture
+ Ranking
+ Note
+
+OrderDetails
+ orderID
+ ProductID
+ OrderNumber
+ Price
+ Quantity
+ Total
+ Discount
+ idsku
+ size
+ color
+ fulfilled
+ shipdate
+ orderdetails
+ billdate
+
+Shiipers
+  shipperid
+  companyname
+  phone
+
+Category
+ category-id
+ category-name
+ description
+ picture
+ active
+
+Orders
+ orderid
+ customerid
+ ordernumber
+ paymentid
+ orderdate
+ shipdate
+ requiredDate
+ shipperId
+ Freight
+ Sales Tax
+ Timestamp
+ TransactiStatus
+ ErrLoc
+ ErrMsg
+ Fullfilled
+ Deleted
+ Paid
+ PaymentDate
+
+Payment
+ paymentid
+ paymentType
+ Allowed
+
+Customer
+ customerId
+ FirstName
+ LastName
+ class
+ Room
+ building
+ address1
+ address2
+ city
+ state
+ postalcode
+ country
+ phone
+ email
+ voicemail
+ password
+ creditcard
+ creditcardtypeid
+ cardexpNo
+ cardExp
+ BillingAddress
+ BillingCity
+ BillingRegion
+ BillingPostalcode
+ BillingCountry
+ ShipAddress
+ ShipCity
+ ShipRegion
+ ShipPostalCode
+ ShipCountry
+ DateEntered
+
+
+
+Shipment
+ id
+ order_id
+ to_address
+ from_address
+ tracking_no
+ sent_at
+
+ShipmentItem
+ shippment_id
+ order_item_id
+
+Order
+ id
+ customer_id
+ status_code_id
+ customer_comments
+
+OrderStatusCode
+ id
+ status_code
+ description
+
+PricingHistory
+ id
+ product_id
+ price
+ started_at
+ ended_at
+
+Product
+ id
+ name
+ sku
+ description
+ price
+ vendor_id
+ category_id
+
+
+ProductCategory
+ id
+ name
+ code
+ description
+ parent_code
+
+ProductVendor
+ id
+ company_code
+ name
+ description
+ address_street_no
+ address_street_alt
+ address_city
+ address_state
+ address_postal_code
+ address_country_code
+
+RelatedProduct
+id
+product_id
+related_product_id
+relevance_score
+
+OrderItem
+ id
+ order_id
+ product_id
+ quantity
+ price
+
+OrderItemReturn
+ id
+ order_item_id
+ return_id
+ issued_by
+ issued_at
+
+
+ShoppinCartItem
+ id
+ customer_id
+ product_id
+ quantity
+ price
+ price_expires_at
+
+ShoppingCartHistoryAction
+ id
+ action_constant
+ description
+
+ShoppingCartHistory
+ id
+ customer_id
+ product_id
+ occured_at
+ action_id
+
